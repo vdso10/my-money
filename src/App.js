@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Header from '../src/components/Header'
 import Home from './pages/Home'
@@ -12,15 +12,10 @@ function App() {
     <>
       <Router>
         <div>
-          <Header />
-          <Routes>
-            <Route path='/' exact element={<Home />} />
-            <Route path='/movimentacoes/:data' exact element={<Movimentacoes />} />
-
-          </Routes>          
-          
+          <Header />          
+            <Route path='/' exact component={Home} />
+            <Route path='/movimentacoes/:data' exact component={Movimentacoes} />          
         </div>
-
       </Router>
       
     </>    

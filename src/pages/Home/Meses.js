@@ -42,7 +42,6 @@ const Meses = () =>{
                                         <td>{data.data[mes].saidas}</td>
                                         
                                     </tr>
-
                                 )
                             })
                     }                                                            

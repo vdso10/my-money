@@ -41,7 +41,7 @@ const init = baseUrl => {
               dispatch({ type: 'SUCCESS', data: res.data})
               
             })
-        }, [])
+        }, [resource])
     
         return data  
     }
